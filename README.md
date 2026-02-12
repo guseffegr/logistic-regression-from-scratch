@@ -81,7 +81,9 @@ Validation results show:
 The final scratch implementation achieved:
 
 - ROC-AUC ≈ 0.73 (validation)
-- Balanced precision and recall (~0.5–0.53 range after tuning)
+
+The final model improves recall significantly compared to the baseline,
+while maintaining acceptable precision despite class imbalance.
 
 Performance is very close to scikit-learn’s LogisticRegression,
 confirming correctness of the implementation.
@@ -105,6 +107,8 @@ class weighting, and threshold tuning.
 
 While scikit-learn provides faster and more robust optimization (LBFGS),
 the scratch implementation offers transparency and strong educational value.
+
+The scratch implementation confirms theoretical correctness and deep understanding of gradient-based optimization.
 
 ## How to run
 
